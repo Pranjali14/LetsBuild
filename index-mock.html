@@ -1,0 +1,137 @@
+<html>
+<head>
+	<style>
+		*{
+			border: 0;
+		    margin: 0;
+		    padding: 0;
+		    box-sizing: border-box;
+		}
+		body{
+			overflow:hidden;
+		}
+		#main_container {
+		    position: relative;
+		    width: 200%;
+		    transform: translateX(-25%) translateZ(0);
+    		background-color: #fff;
+    		transition: all .3s cubic-bezier(0.6,.1,.3,.8);
+	   	}
+
+	   	#main_container .container {
+		    position: relative;
+		    width: 50%;
+		    float: right;
+		    padding: 80px 0 60px;
+		    overflow: hidden;
+		    line-height: 1.4;
+		    white-space: nowrap;
+		}
+
+		.wrapper {
+		    position: relative;
+		    display: inline-block;
+		    vertical-align: top;
+		    -webkit-transition: all .3s cubic-bezier(0.6,.1,.3,.8);
+		    -moz-transition: all .3s cubic-bezier(0.6,.1,.3,.8);
+		    -ms-transition: all .3s cubic-bezier(0.6,.1,.3,.8);
+		    -o-transition: all .3s cubic-bezier(0.6,.1,.3,.8);
+		    transition: all .3s cubic-bezier(0.6,.1,.3,.8);
+		}
+				
+		#contribute_div .device {
+		    max-width: 285px;
+		     padding: 30px 10px 0;
+		}
+		#main_container .device, #main_container .txt_container {
+		    position: relative;
+		    white-space: normal;
+		    display: inline-block;
+		    vertical-align: middle;
+		    max-width:300px;
+		}
+		#contribute_div .wrapper{
+			left:-14%;
+		}
+		#contribute_wrapper:hover{
+			left:-5%;
+		}
+		#propose_div .wrapper{
+			left:9%;
+		}
+		#propose_wrapper:hover{
+			left:2%;
+		}
+		#propose_wrapper .txt_container{
+			margin-left:110%;
+			margin-right:5%;
+			width:40%;
+			max-width:300px;
+		}
+		#contribute_wrapper .txt_container{
+			margin-left:32%;
+		}
+		#propose_img_div{
+			top: -20px;
+		}
+		#propose_clip{
+			height:550px;
+		}
+	</style>
+</head>
+<body>
+<div id="main_container">
+
+	<div id="contribute_div" class="container">
+
+		<div id = 'contribute_wrapper' class = 'wrapper' >
+			<!-- Device -->
+			<div id="contribute_img_div" class="device">
+				<img src="contribute.jpg" alt="Proposeanapp">
+			</div>
+			<div class="txt_container" >
+				<div class="txt_title mobile" >
+					 <h1 class="md-display-1">
+                        I would like to contribute 
+                    </h1>
+                    <p>
+                        I want to help people build ideas
+                    </p>
+                    <div class="button-container home-btn-container" >
+                        <md-button href="#/all-proposals" class="md-raised md-primary primary-button gtm-click-bacb">
+                            Be a Contributor
+                        </md-button>
+                     </div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div id="propose_div"  class="container">
+		<div id='propose_wrapper' class = 'wrapper' >
+			<!-- Text -->
+			<div class="txt_container" >
+				<div class="txt_title desktop" >
+					<h1 class="md-display-1">
+                        I have an Idea
+                    </h1>
+                    <p>
+                        I want contributors to help me build an Idea
+                    </p>
+                    <div class="button-container home-btn-container" >
+                        <md-button href="#/propose-form" class="md-raised md-primary primary-button gtm-click-pap" >
+                            Propose An App
+                        </md-button>
+                    </div>
+				</div>
+
+			</div>
+			<!-- Device -->
+			<div id="propose_img_div" class="device" >
+				<img id='propose_clip' src="propose-clip.png" alt="propose" >
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
